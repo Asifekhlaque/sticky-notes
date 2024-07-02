@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(33, 33, 33);
+    font-family: poppins;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: repeating-linear-gradient(to right,transparent 0 50px,#fff1 50px 51px),
+    repeating-linear-gradient(to bottom,transparent 0 50px,#fff1 50px 51px);
+    position: relative;
+}
+form{
+    background-color: #eee;
+    width: max-content;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px;
+}
+form input, button{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    cursor: pointer;
+}
+form input::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+form input::-webkit-color-swatch{
+    border: none;
+    border-radius: 50%;
+}
+#list textarea{
+    all:unset;
+    color: #ffffff;
+}
+#list .note{
+    background-color: #333;
+    width: max-content;
+    border-top: 30px solid #ffbb00;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+#list .note span{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 30px;
+    font-family: cursive;
+    font-size: large;
+    padding-right: 10px;
+    cursor: pointer;
+    color: #eee;
+}
